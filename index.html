@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Williams Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            background-color: #5f38eb;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #208df2;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #23e9f8e8;
+            color: #000;    
+        }
+        .content {
+            padding: 20px;
+        }
+        .about-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(220px, 0.65fr);
+            align-items: center;
+            gap: 32px;
+        }
+        .about-layout img {
+            display: block;
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            justify-self: end;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width: 600px) {
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+            .about-layout img {
+                justify-self: start;
+                max-width: 280px;
+            }
+        }
+        #skills ul,
+        #projects ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            padding: 0;
+            list-style: none;
+        }
+        #skills li,
+        #projects li {
+            padding: 20px;
+            background-color: #23e9f8e8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        #contact .contact-card,
+        #about .contact-card {
+            padding: 20px;
+            background-color: #23e9f8e8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            max-width: fit-content;
+        }
+        #skills li,
+        #projects li {
+            font-weight: bold;
+        }
+        #contact .contact-card p:first-child {
+            margin-top: 0;
+        }
+        #contact .contact-card > :last-child {
+            margin-bottom: 0;
+        }
+        .contact-card:hover {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1><br>
+        <h2>Michael Williams</h2>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-layout">
+                <div>
+                    <p> I am a self-taught programmer transitioning from the medical field to a software 
+                        development role. Through roles as an EMT, medical assistant, and dermatology tech, 
+                        I honed skills such as collaboration, calmness under pressure, and facilitating communication 
+                        between patients and their care providers.I recently completed the IBM Full Stack Software 
+                        Developer Certificate. I am a self-starter looking to continue developing knowledge and skills 
+                        in the field of software engineering.</p>
+                    <p>Please see the links below to visit my Github profile and/or download my resume.</p><br>
+                    <div class="contact-card">
+                        <a href="https://github.com/mgwilliams112-ui" target="_blank">GitHub Profile</a><br>
+                        <a href="resources/Resume - Michael Williams.pdf" target="_blank">Download Resume</a>
+                    </div>
+                </div>
+                <img src="resources/images/Headshot.jpg" alt="Michael Williams headshot">
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>SQL</li>
+                <li>Team Collaboration</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+                <li>Problem-Solving</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> In progress.</li>
+                <li><strong>Project 2:</strong> In progress.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-card">
+                <p><a href="mailto:mgwilliams112@gmail.com">mgwilliams112@gmail.com</a></p>
+                <p><a href="tel:704-277-1903">704-277-1903</a></p>
+                <a href="https://www.linkedin.com/in/michael-williams-7b0a1b1b6/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
